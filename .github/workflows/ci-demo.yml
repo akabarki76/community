@@ -1,0 +1,45 @@
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ '*' ]
+
+jobs:
+  quality-checks:
+    name: Lint & Test
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.2'
+          bundler-cache: true
+
+      - name: Run RuboCop
+        run: bundle exec rubocop --format simple
+
+      - name: Run RSpec
+        run: bundle exec rspec --format documentation
+
+  accessibility-scan:
+    needs: quality-checks
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Start Docs Server
+        run: |
+          bundle exec jekyll serve --detach --port 4000
+          echo "URL=http://localhost:4000" >> $GITHUB_ENV
+
+      - name: Axe Accessibility Audit
+        uses: dequelabs/axe-action@v2
+        with:
+          url: ${{ env.URL }}
+          timeout: 60
