@@ -145,3 +145,5 @@ cd community
 Let me know what you’d like to emphasize, and I’ll refine further! 🛠️  
 
 *(Pro tip: Pin this repo to your GitHub profile for visibility.)*
+
+[![Project Status](https://img.shields.io/badge/status-active-brightgreen)](https://github.com/akabarki76/community)
