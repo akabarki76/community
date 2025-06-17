@@ -1,0 +1,17 @@
+/.
+├── .github/
+│   └── workflows/ci-demo.yml
+├── assets/
+│   ├── community-banner.png
+│   ├── community-banner-light.svg
+│   └── community-banner-dark.svg
+├── automations/
+│   └── stalebot.rb
+├── docs/
+│   └── Accessibility Skills Student Series Spring 2025.md
+│   └── accessibility.md
+├── CODE_OF_CONDUCT.md
+├── CONTRIBUTING.md
+├── Gemfile
+├── Gemfile.lock
+└── README.md

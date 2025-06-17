@@ -1,0 +1,1 @@
+git add assets/ docs/accessibility.md .github/workflows/ci-demo.yml
