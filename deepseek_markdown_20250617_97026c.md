@@ -1,1 +1,0 @@
-[![CI Status](https://github.com/akabarki76/community/workflows/CI/CD%20Pipeline/badge.svg)](https://github.com/akabarki76/community/actions)

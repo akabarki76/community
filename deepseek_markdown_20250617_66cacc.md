@@ -1,1 +1,0 @@
-![WCAG 2.1 AA](https://img.shields.io/badge/WCAG-2.1_AA-success?logo=accessibility)

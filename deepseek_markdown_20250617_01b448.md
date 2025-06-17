@@ -1,1 +1,0 @@
-We comply with [WCAG 2.1 AA](docs/accessibility.md) guidelines.

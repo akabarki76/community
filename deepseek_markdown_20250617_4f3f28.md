@@ -1,1 +1,0 @@
-[![Open in Codespaces](https://img.shields.io/badge/Launch-Codespaces-blue?logo=github)](https://codespaces.new/akabarki76/community)
